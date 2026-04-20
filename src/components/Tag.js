@@ -5,7 +5,7 @@ import {  useState } from 'react';
 import Spinner from './Spinner';
 import useGif from "../hooks/useGif"; 
 
-const API_KEY =process.env.REACT_APP_GIPHY_API_KEY
+// const API_KEY =process.env.REACT_APP_GIPHY_API_KEY
 const Tag= () => {
     const[tag,setTag]=useState('car');
     // const[gif,setGif]=useState('');
@@ -44,7 +44,7 @@ const Tag= () => {
     <div className="flex flex-col items-center bg-blue-500 md:w-1/2 w-11/12 rounded-lg border-2 border-gray-600 gap-y-5 mt-[15px] mx-auto py-5">
         <h1 className="uppercase font-bold text-2xl underline ">Random {tag} Gifs</h1>
         {
-            loading ? <Spinner /> : <img src={gif} width="450" />
+            loading ? <Spinner /> : <img src={gif} alt="gif" width="450" />
         }
 
         <input

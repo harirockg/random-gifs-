@@ -4,7 +4,7 @@ import React from 'react'
 import Spinner from './Spinner';
 import useGif from "../hooks/useGif";
 
-const API_KEY =process.env.REACT_APP_GIPHY_API_KEY
+// const API_KEY =process.env.REACT_APP_GIPHY_API_KEY
 const Random = () => {
     // const[gif,setGif]=useState('');
     // const[loading,setLoading]=useState(false);
@@ -35,7 +35,7 @@ const Random = () => {
     <div className="flex flex-col items-center bg-green-500 md:w-1/2 w-11/12 rounded-lg border-2 border-gray-600 gap-y-5 mt-[15px] mx-auto py-5">
         <h1 className="uppercase font-bold text-2xl underline ">A Random Gifs</h1>
         {
-            loading ? <Spinner /> : <img src={gif} width="450" />
+            loading ? <Spinner /> : <img src={gif} alt="gif" width="450" />
         }
 
         
